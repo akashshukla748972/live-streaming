@@ -9,7 +9,11 @@ const app = express();
 // CORS Setup
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://live-streaming-khaki.vercel.app/",
+    ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
